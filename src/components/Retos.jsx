@@ -16,6 +16,10 @@ const Retos = ({ participantesHombres, participantesMujeres }) => {
   const randomM = (Math.random() * arrayM.length) | 0;
   const randomReto = (Math.random() * arrayM.length) | 0;
 
+  const siguienteReto = () => {
+    window.location.reload(true);
+  };
+
   return (
     <div>
       <main className="container mx-auto mt-5 md:mt-20 p-5 md:flex md:justify-center">
@@ -31,7 +35,10 @@ const Retos = ({ participantesHombres, participantesMujeres }) => {
               </p>
             </div>
 
-            <button className="bg-blue-600 p-3 w-full uppercase font-bold text-white mt-5 rounded">
+            <button
+              className="bg-blue-600 p-3 w-full uppercase font-bold text-white mt-5 rounded"
+              onClick={siguienteReto}
+            >
               Siguiente Reto
             </button>
           </div>
