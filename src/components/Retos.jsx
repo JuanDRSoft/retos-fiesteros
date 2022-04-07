@@ -14,9 +14,15 @@ const Retos = ({ participantesHombres, participantesMujeres }) => {
 
   const randomH = (Math.random() * arrayH.length) | 0;
   const randomM = (Math.random() * arrayM.length) | 0;
-  const randomReto = (Math.random() * arrayM.length) | 0;
+  const randomReto = (Math.random() * arrayRetos.length) | 0;
 
   const siguienteReto = () => {
+    window.location.reload(true);
+  };
+
+  const terminarJuego = () => {
+    localStorage.removeItem("participantesHombres");
+    localStorage.removeItem("participantesMujeres");
     window.location.reload(true);
   };
 
@@ -36,11 +42,18 @@ const Retos = ({ participantesHombres, participantesMujeres }) => {
             </div>
 
             <button
-              className="bg-blue-600 p-3 w-full uppercase font-bold text-white mt-5 rounded"
+              className="bg-blue-600 p-3 w-full uppercase font-bold text-white mt-5 rounded cursor-pointer hover:bg-blue-500 duration-300"
               onClick={siguienteReto}
             >
               Siguiente Reto
             </button>
+
+            <input
+              type="button"
+              value="terminar juego"
+              className="uppercase mt-5 w-full bg-red-500 p-3 rounded text-white font-bold hover:bg-red-400 cursor-pointer duration-300"
+              onClick={terminarJuego}
+            />
           </div>
         </div>
       </main>
