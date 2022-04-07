@@ -86,8 +86,8 @@ const Inicio = ({
 
                 <input
                   type="submit"
-                  className="bg-blue-500 w-10 text-white font-bold uppercase rounded hover:bg-blue-400 cursor-pointer duration-300 shadow-xl"
-                  value="+"
+                  className="bg-blue-500  text-white text-xs p-1 font-bold uppercase rounded hover:bg-blue-400 cursor-pointer duration-300 shadow-xl"
+                  value=" + agregar "
                 />
               </div>
             </form>
@@ -106,8 +106,8 @@ const Inicio = ({
 
                 <input
                   type="submit"
-                  className="bg-blue-500 w-10 text-white font-bold uppercase rounded hover:bg-blue-400 cursor-pointer duration-300 shadow-xl"
-                  value="+"
+                  className="bg-blue-500 text-xs p-1 text-white font-bold uppercase rounded hover:bg-blue-400 cursor-pointer duration-300 shadow-xl"
+                  value=" + agregar "
                 />
               </div>
             </form>
