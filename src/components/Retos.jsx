@@ -32,14 +32,18 @@ const Retos = ({ participantesHombres, participantesMujeres }) => {
         <div className="md:w-2/3 lg:w-2/5">
           <div className="my-10 bg-white shadow rounded-lg p-10">
             <h1 className="uppercase font-bold text-4xl flex justify-center">
-              Reto
+              🥳 reto 🎉
             </h1>
 
-            <div>
-              <p className="font-bold capitalize mt-10 text-lg">
-                <span className="text-red-600">{arrayH[randomH]}</span>{" "}
+            <div className="flex">
+              <p className="font-bold capitalize mt-10 text-lg mx-auto">
+                <span className="text-red-600 uppercase">
+                  {arrayH[randomH]}
+                </span>{" "}
                 <span>{arrayRetos[randomReto]}</span>{" "}
-                <span>{arrayM[randomM]}</span>
+                <span className="text-red-600 uppercase">
+                  {arrayM[randomM]}
+                </span>
               </p>
             </div>
 

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import titulo from "../img/titulo.png";
 
 const Inicio = ({
   guardarParticipante,
@@ -59,12 +60,11 @@ const Inicio = ({
     <div>
       <main className="container mx-auto mt-5 md:mt-20 p-5 md:flex md:justify-center">
         <div className="md:w-2/3 lg:w-2/5">
-          <div className="my-10 bg-white shadow rounded-lg p-10">
-            <h1 className="uppercase font-bold text-4xl flex justify-center">
-              Juanchurri's party
-            </h1>
-
-            <p className="mt-10">Registra minimo 2 hombres y 2 mujeres</p>
+          <img src={titulo} className="mx-auto" />
+          <div className="my-5 bg-white shadow-xl rounded-sm p-10">
+            <p className="font-bold capitalize">
+              Registra minimo 2 hombres y 2 mujeres
+            </p>
 
             {msg && (
               <div className="bg-red-600 rounded flex justify-center mt-5">
@@ -72,8 +72,11 @@ const Inicio = ({
               </div>
             )}
 
-            <form className="mt-5 " onSubmit={handleNuevoParticipante}>
-              <label>Nombre de los hombres:</label>
+            <form
+              className="mt-5 capitalize "
+              onSubmit={handleNuevoParticipante}
+            >
+              <label className="font-bold">Nombre de los hombres:</label>
 
               <div className="flex items-center mt-3">
                 <input
@@ -92,8 +95,11 @@ const Inicio = ({
               </div>
             </form>
 
-            <form className="mt-5 " onSubmit={handleNuevoParticipanteMujer}>
-              <label>Nombre de las mujeres:</label>
+            <form
+              className="mt-5 capitalize"
+              onSubmit={handleNuevoParticipanteMujer}
+            >
+              <label className="font-bold">Nombre de las mujeres:</label>
 
               <div className="flex items-center mt-3">
                 <input
