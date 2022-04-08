@@ -61,7 +61,7 @@ const Inicio = ({
       <main className="container mx-auto mt-5 md:mt-20 p-5 md:flex md:justify-center">
         <div className="md:w-2/3 lg:w-2/5">
           <img src={titulo} className="mx-auto" />
-          <div className="my-5 bg-white shadow-xl rounded-sm p-10">
+          <div className="my-5 bg-white shadow-xl rounded-sm p-10 m-3 ">
             <p className="font-bold capitalize">
               Registra minimo 2 hombres y 2 mujeres
             </p>
@@ -76,13 +76,13 @@ const Inicio = ({
               className="mt-5 capitalize "
               onSubmit={handleNuevoParticipante}
             >
-              <label className="font-bold">Nombre de los hombres:</label>
+              <label className="font-bold">hombres:</label>
 
               <div className="flex items-center mt-3">
                 <input
                   type="text"
                   className="border-b mt-2 w-full mr-5"
-                  placeholder="participante"
+                  placeholder="Nombre"
                   value={participantesHombres}
                   onChange={(e) => setParticipantesHombres(e.target.value)}
                 />
@@ -96,16 +96,16 @@ const Inicio = ({
             </form>
 
             <form
-              className="mt-5 capitalize"
+              className="mt-5 capitalize "
               onSubmit={handleNuevoParticipanteMujer}
             >
-              <label className="font-bold">Nombre de las mujeres:</label>
+              <label className="font-bold">mujeres:</label>
 
               <div className="flex items-center mt-3">
                 <input
                   type="text"
                   className="border-b mt-2 w-full mr-5"
-                  placeholder="participante"
+                  placeholder="Nombre"
                   value={participantesMujeres}
                   onChange={(e) => setParticipantesMujeres(e.target.value)}
                 />
