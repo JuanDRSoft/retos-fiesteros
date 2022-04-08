@@ -36,8 +36,10 @@ const Retos = ({ participantesHombres, participantesMujeres }) => {
             </h1>
 
             <div>
-              <p className="font-bold capitalize mt-10 flex justify-center text-lg">
-                {arrayH[randomH]} {arrayRetos[randomReto]} {arrayM[randomM]}
+              <p className="font-bold capitalize mt-10 text-lg">
+                <span className="text-red-600">{arrayH[randomH]}</span>{" "}
+                <span>{arrayRetos[randomReto]}</span>{" "}
+                <span>{arrayM[randomM]}</span>
               </p>
             </div>
 
